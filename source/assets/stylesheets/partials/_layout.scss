@@ -1,0 +1,41 @@
+html,
+body {
+  height: 100%;
+}
+
+header[role="banner"] {
+  display: table;
+  width: 100%;
+  height: 90vh;
+  min-height: 90%;
+  color: $clouds;
+  background-color: $wet-asphalt;
+  background-image: linear-gradient(-180deg, $wet-asphalt 0%, $midnight-blue 100%);
+  .header-inner {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    .me {
+      width: 128px;
+      height: 128px;
+      margin: 0 auto 20px;
+      background: transparent url(../images/me.png) no-repeat center center;
+      background-size: 128px 128px;
+      @include border-radius($global-rounded);
+    }
+    h2 {
+      color: $clouds;
+    }
+    .inline-list {
+      text-align: center;
+      > li {
+        display: inline-block;
+        float: initial;
+      }
+    }
+  }
+}
+
+main[role="main"] {
+  padding: 40px 10px 0;
+}
