@@ -39,4 +39,9 @@ header[role="banner"] {
 
 main[role="main"] {
   padding: 40px 10px 0;
+  article section {
+    margin-bottom: 20px;
+    border-bottom: 1px solid $clouds;
+    @include clearfix;
+  }
 }
