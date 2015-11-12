@@ -23,8 +23,9 @@ header[role="banner"] {
       background-size: 128px 128px;
       @include border-radius($global-rounded);
     }
-    h2 {
+    h1 {
       color: $clouds;
+      font-size: rem-calc(32);
     }
     .inline-list {
       text-align: center;

@@ -1,24 +1,138 @@
----
-pageable: true
-per_page: 10
----
-<% if paginate && num_pages > 1 %>
-  <p>Page <%= page_number %> of <%= num_pages %></p>
-
-  <% if prev_page %>
-    <p><%= link_to 'Previous page', prev_page %></p>
-  <% end %>
-<% end %>
-
-<% page_articles.each_with_index do |article, i| %>
-  <h2><%= link_to article.title, article %> <span><%= article.date.strftime('%b %e') %></span></h2>
-  <!-- use article.summary(250) if you have Nokogiri available to show just
-       the first 250 characters -->
-  <%= article.body %>
-<% end %>
-
-<% if paginate %>
-  <% if next_page %>
-    <p><%= link_to 'Next page', next_page %></p>
-  <% end %>
-<% end %>
+<section>
+  <h2>Howdy!</h2>
+  <p>
+    I'm a software writer living in Fort Worth, Texas. Most of my days are spent designing, creating, and leading engineering teams. I really enjoy what I do. I'm passionate about creating products that delight and promoting a team-centric culture for the companies I serve.
+  </p>
+  <p>
+    Most recently I've been a Scrum Master and Engineering Manager. Ruby is my language of choice, Rails my framework of choice, Backbone my javascript framework of choice and I enjoy designing in Sketch.
+  </p>
+</section>
+<section>
+  <h2>Experience</h2>
+  <h5 class="subheader upcase bold margin-bottom-10">
+    Founder, Scrummage, LLC &bull; Fort Worth, TX &bull; 2008 &ndash; Present
+  </h5>
+  <p>
+    <a href="http://getscrummage.com">http://getscrummage.com</a>
+    <i class="mute">New website coming soon!</i>
+  </p>
+  <p>
+    After trying many Scrum management tools to utilize at Fellowship Tech/Active Network, I found that there wasn’t a product on the market that met all of our needs as an agile development team. I began working Scrummage in 2008 and continue to work on it today. We have served clients such as <a href="http://theverge.com">The Verge</a>, <a href="http://sbnation.com">SB Nation</a> and <a href="http://booking.com">Booking.com</a> to name a few.
+  </p>
+  <p>
+    My responsibilities include&hellip;
+  </p>
+  <ul>
+    <li>
+      Running the business (support, talking to customers, vendor relations)
+    </li>
+    <li>
+      Hiring
+    </li>
+    <li>
+      Software engineering (Ruby, Ruby on Rails, SCSS, Backbone.js, MySQL)
+    </li>
+    <li>
+      UI/UX design
+    </li>
+  </ul>
+  <h5 class="subheader upcase bold margin-bottom-10">
+    Manager of software development, OGsys &bull; Fort Worth, TX &bull; 2013 &ndash; Present
+  </h5>
+  <p>
+    <a href="http://www.ogsys.com">http://www.ogsys.com</a>
+  </p>
+  <p>
+    I was brought onboard to provide technical leadership and mentoring to the development team creating the next generation product for the company. Responsibilities include user experience and visual design, implementing Scrum and agile practices, serving as Scrum Master, architect and writing code.
+  </p>
+  <p>
+    My responsibilities include&hellip;
+  </p>
+  <ul>
+    <li>
+      Scrum Master
+    </li>
+    <li>
+      Hiring
+    </li>
+    <li>
+      Architecture
+    </li>
+    <li>
+      UI/UX design
+    </li>
+    <li>
+      Software engineering (C#, Asp.Net MVC, SCSS, Backbone.js, SQL Server)
+    </li>
+  </ul>
+  <h5 class="subheader upcase bold margin-bottom-10">
+    Director of Development, causemetric &bull; Rogers, AR &bull; 2011 &ndash; 2013
+  </h5>
+  <p>
+    <a href="https://purecharity.com/">https://purecharity.com</a>
+  </p>
+  <p>
+    Managed the development of a social giving platform called Pure Charity. Implemented the Scrum methodology and was Scrum Master, hired and managed development team members, wrote code (full stack developer).
+  </p>
+  <p>
+    My responsibilities included&hellip;
+  </p>
+  <ul>
+    <li>
+      Scrum Master
+    </li>
+    <li>
+      Managing a remote team
+    </li>
+    <li>
+      Hiring
+    </li>
+    <li>
+      Architecture
+    </li>
+    <li>
+      UI/UX design
+    </li>
+    <li>
+      Software engineering (Ruby, Ruby on Rails, SCSS, Backbone.js, PostgreSQL)
+    </li>
+  </ul>
+  <h5 class="subheader upcase bold margin-bottom-10">
+    UX Manager, Active Network &bull; Irving, TX &bull; 2010 &ndash; 2011
+  </h5>
+  <p>
+    <a href="http://activenetwork.com/">http://activenetwork.com</a>
+  </p>
+  <p>
+    Through acquisition of Fellowship Technologies.
+  </p>
+  <h5 class="subheader upcase bold margin-bottom-10">
+    UX Architect, Fellowship Technologies &bull; Irving, TX &bull; 2004 &ndash; 2010
+  </h5>
+  <p>
+    <a href="http://fellowshipone.com/">http://fellowshipone.com</a>
+  </p>
+  <p>
+    I came onboard during the first 6 months of the company as full stack .Net developer but mooved into a user experience role a year or so later. I was also a member of the leadership team. Responsibilities included product design (visual and user experience), managing the UX team, working with engineering teams, font-end development including (HTML/CSS/JavaScript), full stack development.
+  </p>
+  <p>
+    My responsibilities included&hellip;
+  </p>
+  <ul>
+    <li>
+      UI/UX design
+    </li>
+    <li>
+      Managed UX team
+    </li>
+    <li>
+      Hiring for the UX team
+    </li>
+    <li>
+      Front-end architecture
+    </li>
+    <li>
+      Member of the leadership team
+    </li>
+  </ul>
+</section>
