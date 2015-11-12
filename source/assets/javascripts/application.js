@@ -14,6 +14,11 @@
         equalize_on_stack: true
       }
     });
+
+    $('body').on('click', 'a[href="#top"]', function(ev) {
+      $('body').animate({scrollTop: 0}, 'slow');
+      return false;
+    });
   };
 
 })();
