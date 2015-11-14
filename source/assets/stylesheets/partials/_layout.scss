@@ -64,8 +64,9 @@ main[role="main"] {
 @media only screen and (max-width: 40em) {
   .links {
     float: initial;
-    > li {
-      float: initial;
+    > li,
+    > li.right {
+      float: initial !important;
       display: block;
     }
   }
