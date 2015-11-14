@@ -20,6 +20,7 @@ header[role="banner"] {
       background: transparent url(../images/me.png) no-repeat center center;
       background-size: 128px 128px;
       @include border-radius($global-rounded);
+      border: 3px solid $midnight-blue;
     }
     h1 {
       color: $clouds;
