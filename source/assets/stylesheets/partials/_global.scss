@@ -1,0 +1,9 @@
+a[class^="ss-"],
+a[class*=" ss-"] {
+  &:before {
+    position: relative;
+    top: 2px;
+    float: left;
+    margin-right: 5px;
+  }
+}

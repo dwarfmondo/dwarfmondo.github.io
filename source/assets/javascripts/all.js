@@ -11,5 +11,6 @@
 //= require foundation/js/foundation/foundation.tab.js
 //= require foundation/js/foundation/foundation.tooltip.js
 //= require foundation/js/foundation/foundation.topbar.js
+//= require ss-social.js
 
 //= require application.js
