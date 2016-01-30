@@ -7,3 +7,24 @@ a[class*=" ss-"] {
     margin-right: 5px;
   }
 }
+
+.ss-dribbble,
+.ss-github,
+.ss-linkedin {
+  &:before {
+    top: 0;
+    font-size: 18px;
+  }
+}
+
+.ss-dribbble:before {
+  color: #ea4c89;
+}
+
+.ss-github:before {
+  color: #000;
+}
+
+.ss-linkedin:before {
+  color: #4875b4;
+}
