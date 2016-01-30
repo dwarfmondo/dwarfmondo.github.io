@@ -61,14 +61,3 @@ main[role="main"] {
 #site-footer {
   padding: 0 10px 20px;
 }
-
-@media only screen and (max-width: 40em) {
-  .links {
-    float: initial;
-    > li,
-    > li.right {
-      float: initial !important;
-      display: block;
-    }
-  }
-}
