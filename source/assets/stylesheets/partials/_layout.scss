@@ -84,6 +84,25 @@ body {
   }
 }
 
+@media #{$small-only} {
+  .mailchimp-layout header[role="banner"] .header-footer {
+    display: block;
+    .me {
+      margin: 0 auto 20px;
+    }
+    h1 {
+      text-align: center;
+    }
+    .inline-list {
+      text-align: center;
+      > li {
+        display: inline-block;
+        float: initial;
+      }
+    }
+  }
+}
+
 main[role="main"] {
   padding: 40px 10px 0;
   article section {
