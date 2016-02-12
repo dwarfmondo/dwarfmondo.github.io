@@ -3,7 +3,7 @@ body {
   height: 100%;
 }
 
-header[role="banner"] {
+.app-layout header[role="banner"] {
   display: table;
   width: 100%;
   height: 90vh;
@@ -36,7 +36,7 @@ header[role="banner"] {
   }
 }
 
-.multiplebgs header {
+.multiplebgs .app-layout header[role="banner"] {
   background: $wet-asphalt;
   background: linear-gradient(-180deg, $wet-asphalt 0%, rgba($midnight-blue, .9) 100%), url(https://source.unsplash.com/category/nature/daily);
   background-repeat: no-repeat;
@@ -44,9 +44,44 @@ header[role="banner"] {
   background-size: cover;
 }
 
-.no-multiplebgs header {
+.no-multiplebgs .app-layout header[role="banner"] {
   background-color: $wet-asphalt;
   background-image: linear-gradient(-180deg, rgba($wet-asphalt, .5) 0%, rgba($midnight-blue, .5) 100%);
+}
+
+.mailchimp-layout {
+  header[role="banner"] {
+    .header-cover {
+      width: 100%;
+      height: 600px;
+      background: $mailchimp-yellow url(../images/freddie_wink.png) no-repeat center center;
+      background-size: 256px 281.6px;
+    }
+    .header-footer {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      padding: 40px 20px;
+      background-color: $mailchimp-blue;
+      .me {
+        width: 64px;
+        height: 64px;
+        background: transparent url(../images/me.png) no-repeat center center;
+        background-size: 64px 64px;
+        @include border-radius($global-rounded);
+      }
+      .me-info {
+        margin-left: 20px;
+        color: $mailchimp-white;
+        h1 {
+          margin: 0 0 5px 0;
+          font-size: rem-calc(26);
+          color: $mailchimp-white;
+        }
+      }
+    }
+  }
 }
 
 main[role="main"] {

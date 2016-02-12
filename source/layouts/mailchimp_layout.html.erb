@@ -11,22 +11,25 @@
     <%= feed_tag :atom, "#{blog.options.prefix.to_s}/feed.xml", title: "Atom Feed" %>
     <%= javascript_include_tag "modernizr" %>
   </head>
-  <body class="app-layout">
+  <body class="mailchimp-layout">
     <header role="banner">
-      <div class="header-inner">
+      <div class="header-cover"></div>
+      <div class="header-footer">
         <div class="me"></div>
-        <h1>Matt Vasquez</h1>
-        <ul class="inline-list">
-          <li>
-            UI/UX Designer
-          </li>
-          <li>
-            Full Stack Developer
-          </li>
-          <li>
-            Scrum Master
-          </li>
-        </ul>
+        <div class="me-info">
+          <h1>Matt Vasquez</h1>
+          <ul class="inline-list margin-bottom-0">
+            <li>
+              UI/UX Designer
+            </li>
+            <li>
+              Full Stack Developer
+            </li>
+            <li>
+              Scrum Master
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <main role="main">

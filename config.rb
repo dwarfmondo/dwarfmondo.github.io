@@ -29,6 +29,7 @@ activate :blog do |blog|
   # blog.page_link = "page/{num}"
 end
 
+page "/mailchimp.html", layout: :mailchimp_layout
 page "/feed.xml", layout: false
 
 ###
