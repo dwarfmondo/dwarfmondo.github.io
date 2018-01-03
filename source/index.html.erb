@@ -32,149 +32,37 @@
       </a>
     </li>
     <li class="medium-text-right">
-      <a href="/assets/images/matt-vasquez-resume.pdf" class="mute">Download Resume</a>
+      <a href="/assets/images/matt-vasquez-resume-2018.pdf" class="mute">Download Resume</a>
     </li>
   </ul>
 </section>
 <section>
   <h2>Experience</h2>
-  <h5 class="subheader upcase bold margin-bottom-10">
-    Founder, Scrummage, LLC &bull; Fort Worth, TX &bull; 2008 &ndash; Present
-  </h5>
-  <p>
-    <a href="http://getscrummage.com">http://getscrummage.com</a>
-  </p>
-  <p>
-    After trying many Scrum management tools to utilize at previous companies, I found that there wasn’t a product on the market that met all of our needs as an agile development team. I began working on Scrummage in 2008 and continue to work on it today with an awesome team. We have served clients such as <a href="http://theverge.com">The Verge</a>, <a href="http://sbnation.com">SB Nation</a> and <a href="http://booking.com">Booking.com</a> to name a few.
-  </p>
-  <p>
-    My responsibilities include&hellip;
-  </p>
-  <ul>
-    <li>
-      Managing the Business
-    </li>
-    <li>
-      Customer Support
-    </li>
-    <li>
-      Hiring
-    </li>
-    <li>
-      Software Development (Ruby, Ruby on Rails, Middleman, SASS/SCSS, Backbone.js, MySQL)
-    </li>
-    <li>
-      UI/UX design
-    </li>
-  </ul>
-  <h5 class="subheader upcase bold margin-bottom-10">
-    Manager of software development, OGsys &bull; Fort Worth, TX &bull; 2013 &ndash; Present
-  </h5>
-  <p>
-    <a href="http://www.ogsys.com">http://www.ogsys.com</a>
-  </p>
-  <p>
-    I was brought onboard to provide technical leadership and mentoring to the development team creating the next generation product for the company. Responsibilities include user experience and visual design, implementing Scrum and agile practices, serving as Scrum Master, architect and writing code.
-  </p>
-  <p>
-    My responsibilities include&hellip;
-  </p>
-  <ul>
-    <li>
-      Scrum Master
-    </li>
-    <li>
-      Hiring
-    </li>
-    <li>
-      Architecture
-    </li>
-    <li>
-      Software Development (C#, Asp.Net MVC, SASS/SCSS, Backbone.js, SQL Server)
-    </li>
-    <li>
-      UI/UX design
-    </li>
-  </ul>
-  <h5 class="subheader upcase bold margin-bottom-10">
-    Director of Development, causemetric &bull; Rogers, AR &bull; 2011 &ndash; 2013
-  </h5>
-  <p>
-    <a href="https://purecharity.com/">https://purecharity.com</a>
-  </p>
-  <p>
-    Managed the development of a social giving platform called Pure Charity. Implemented the Scrum methodology and was Scrum Master, hired and managed development team members, wrote code (full stack developer).
-  </p>
-  <p>
-    My responsibilities included&hellip;
-  </p>
-  <ul>
-    <li>
-      Scrum Master
-    </li>
-    <li>
-      Managing a remote team
-    </li>
-    <li>
-      Hiring
-    </li>
-    <li>
-      Architecture
-    </li>
-    <li>
-      UI/UX design
-    </li>
-    <li>
-      Software Development (Ruby, Ruby on Rails, SASS/SCSS, Backbone.js, PostgreSQL)
-    </li>
-  </ul>
-  <h5 class="subheader upcase bold margin-bottom-10">
-    UX Manager, Active Network &bull; Irving, TX &bull; 2010 &ndash; 2011
-  </h5>
-  <p>
-    <a href="http://activenetwork.com/">http://activenetwork.com</a>
-  </p>
-  <p>
-    Through acquisition of Fellowship Technologies.
-  </p>
-  <h5 class="subheader upcase bold margin-bottom-10">
-    UX Architect, Fellowship Technologies &bull; Irving, TX &bull; 2004 &ndash; 2010
-  </h5>
-  <p>
-    <a href="http://fellowshipone.com/">http://fellowshipone.com</a>
-  </p>
-  <p>
-    I came onboard during the first 6 months of the company as a full stack .Net developer but moved into a user experience role a year or so later. I was also a member of the leadership team. Responsibilities included product design (visual and user experience), managing the UX team, working with engineering teams, font-end development including (HTML/CSS/JavaScript), full stack development.
-  </p>
-  <p>
-    My responsibilities included&hellip;
-  </p>
-  <ul>
-    <li>
-      UI/UX design
-    </li>
-    <li>
-      Managed UX team
-    </li>
-    <li>
-      Hiring for the UX team
-    </li>
-    <li>
-      Front-end architecture
-    </li>
-    <li>
-      Member of the leadership team
-    </li>
-    <li>
-      Employee of The Year, 2007
-    </li>
-  </ul>
-  <h5 class="subheader upcase bold margin-bottom-10">
-    Consultant, Hitachi Consulting &bull; Dallas, TX &bull; 2003 &ndash; 2004
-  </h5>
-  <h5 class="subheader upcase bold">
-    Developer, HealthSoft, Inc. &bull; Dallas, TX &bull; 2002 &ndash; 2003
-  </h5>
+  <% data.experience.work.each do |work| %>
+    <h5 class="subheader upcase bold margin-bottom-10">
+      <%= work.title %>
+    </h5>
+    <p>
+      <a href="<%= work.url %>" target="_blank"><%= work.url %></a>
+    </p>
+    <% if work.description.present? %>
+      <p>
+        <%= work.description %>
+      </p>
+    <% end %>
+    <% if work.responsibilities.present? %>
+      <p>
+        My responsibilities include&hellip;
+      </p>
+      <ul>
+        <% work.responsibilities.each do |responsibility| %>
+          <li>
+            <%= responsibility %>
+          </li>
+        <% end %>
+      </ul>
+    <% end %>
+  <% end %>
 </section>
 <section>
   <h2>Education</h2>
@@ -186,31 +74,22 @@
   </p>
 </section>
 <section>
-  <h2>Skills, Certifications</h2>
+  <h2>Skills, Certifications, Awards</h2>
   <ul>
-    <li>
-      Product Design (UI/UX)
-    </li>
-    <li>
-      Ruby, C#
-    </li>
-    <li>
-      Ruby on Rails, Asp.Net MVC
-    </li>
-    <li>
-      MySQL, PostgreSQL, SQL Server
-    </li>
-    <li>
-      jQuery, Backbone, React
-    </li>
-    <li>
-      SASS/SCSS, CSS3, HTML5
-    </li>
-    <li>
-      Git
-    </li>
-    <li>
-      Certified Scrum Master, 2013 - Present, Scrum Alliance
-    </li>
+    <% data.skills.each do |skill| %>
+      <li>
+        <%= skill %>
+      </li>
+    <% end %>
+    <% data.certifications.each do |certification| %>
+      <li>
+        <%= certification %>
+      </li>
+    <% end %>
+    <% data.awards.each do |award| %>
+      <li>
+        <%= award %>
+      </li>
+    <% end %>
   </ul>
 </section>

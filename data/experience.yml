@@ -1,0 +1,61 @@
+work:
+  - title: 'VP of Product Development, One Network – Healthcare; Dallas, TX 2016 - Present'
+    url: https://www.onenetwork.com
+    description: >
+      Our Healthcare division was created to connect the patient to the supply chain and develop an industry leading patient outcome driven supply chain. My responsibilities are development and delivery of a solution that meets our customer’s needs. These responsibilities include technical leadership and mentoring, implementing Scrum and agile best practices, managing a team both co-located and remote (Pune, India), growing revenue, and managing customers (domestic and international).
+    responsibilities:
+      - Implementing Scrum and agile best practices
+      - Building a team (Hiring)
+      - 'Overseeing the architecture, design, and development of our solution'
+      - Customer account management (domestic and international)
+      - 'Software Development (Java, Java Struts, Ext.js, React, Oracle DB)'
+      - 'UI/UX Design (Sketch, InVision)'
+  - title: 'Founder, Scrummage, LLC; Fort Worth, TX 2008 - Present'
+    url: https://getscrummage.com
+    description: >
+      After trying many Scrum management tools to utilize at previous companies, I found that there wasn’t a product on the market that met all of our needs as an agile development team. I began working on Scrummage in 2008 and continue to work on it today with an awesome team. We have served clients such as Harrisburg University, The Verge, SB Nation and booking.com to name a few.
+    responsibilities:
+      - 'Running the Business (support, managing customer relationships, vendor relationships, marketing)'
+      - Customer Support
+      - Hiring
+      - Architecture
+      - 'Software Development (Ruby, Ruby on Rails, Middleman, SASS/SCSS, Backbone.js, MySQL/PostgreSQL)'
+      - 'UI/UX Design (Sketch, InVision)'
+  - title: 'Manager of Software Development, OGsys; Fort Worth, TX  2013 - 2016'
+    url: http://www.ogsys.com
+    description: >
+      I was brought onboard to provide technical leadership and mentoring to the development team creating the next generation product for the company. I was tasked with bringing a legacy client-server C/C++ application to the cloud (SaaS) with a modern architecture built for enterprise scale. Responsibilities included user experience and visual design, implementing Scrum and agile best practices, serving as Scrum Master, architect and writing code.
+    responsibilities:
+      - Scrum Master (CSM)
+      - Hiring
+      - Architecture
+      - 'Software Development (C#, ASP.NET MVC, SASS/SCSS, Backbone.js, SQL Server)'
+      - 'UI/UX Design (Sketch, InVision)'
+  - title: 'Director of Development, Causemetric; Rogers, AR 2011 - 2013'
+    url: https://pruecharity.com
+    description: >
+      Managed the development of a social giving platform called Pure Charity. Implemented the Scrum methodology and was Scrum Master, hired and managed development team members, wrote code (full stack developer), and guided the architecture of the platform.
+    responsibilities:
+      - Scrum Master
+      - Managing a remote team
+      - Hiring
+      - Architecture
+      - 'Software Development (Ruby, Ruby on Rails, SASS/SCSS, HAML, Backbone.js, PostgresSQL)'
+      - 'UI/UX Design (Sketch, InVision)'
+  - title: 'UX Manager, The Active Network; Irving, TX 2010 - 2011'
+    url: http://www.activenetwork.com
+    description: >
+      Through acquisition of Fellowship Technologies.
+  - title: 'UX Architect, Fellowship Technologies; Irving, TX 2004 - 2010'
+    url: https://www.fellowshipone.com
+    description: >
+      I joined during the first 6 months of the company as a full stack .Net developer but moved into a user experience role a year or so later. I was also a member of the leadership team. Responsibilities included product design (visual and user experience), managing the UX team, working with engineering teams, font-end development including (HTML/CSS/JavaScript), full stack development.
+    responsibilities:
+      - UI/UX Design
+      - Managed UX Team
+      - Hiring
+      - Front-end Architecture
+      - Member of the leadership team
+      - 'Employee of The Year, 2007'
+  - title: 'Consultant, Hitachi Consulting; Dallas, TX 2003 - 2004'
+  - title: 'Developer, HealthSoft, INC; Dallas, TX 2002 - 2003'
