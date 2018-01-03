@@ -130,11 +130,15 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+
+  require_relative "./lib/build_cleaner"
+  activate :build_cleaner
 end
 
 activate :deploy do |deploy|
   deploy.method = :git
   deploy.branch = 'master'
+  deploy.strategy = :force_push
   deploy.build_before = true
 end
 
